@@ -6,8 +6,10 @@ The three matching strategies are: 3-For-Loops (hierarchical 3-step grid search)
 
 Requirements: 
 
-python version: 3.12,
-pandas, numpy, matplotlib, scipy, tqdm;
+python version: 3.12
+
+pandas, numpy, matplotlib, scipy, tqdm
+
 Input files: One database in the standardized database excel sheet, one experimental 13C NMR data of a sample in the standardized sample excel sheet
 
 
@@ -20,6 +22,8 @@ from synCrino_validation import run_and_compare_benchmarks, load_database, load_
 database = load_database("path/to/standardized_database.xlsx")
 
 sample = load_sample("path/to/standardized_sample.xlsx")
+
+
 #Run full comparative benchmark
 
 df_dp, df_bf, df_3l, top10 = run_and_compare_benchmarks(
