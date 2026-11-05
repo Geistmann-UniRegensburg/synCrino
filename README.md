@@ -28,7 +28,13 @@ results_df = comparison_similar_compound(
     exact_carbon_count=True
 )
 
+# Example an further Use:
 
+As an testing example, there is the sample excel file "sample_hyperandroneA_CDCl3.xlsx" and its associated database excel file "Database_1.xlsx" provided.
+
+As described in the paper, Database 1 contains caged bicyclo[3.3.1]nonane Type A acylphloroglucinols, and Database 2 compiles uncaged bicyclo[3.3.1]nonane Type A acylphloroglucinols.
+
+For further use, there are the standardized excel files for sample ("sample_empty.xlsx") and database ("database_empty.xlsx") provided.
 
 
 
