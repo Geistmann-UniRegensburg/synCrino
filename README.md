@@ -28,7 +28,7 @@ results_df = comparison_similar_compound(
     exact_carbon_count=True
 )
 
-# Example an further Use:
+# Example and further Use:
 
 As an testing example, there is the sample excel file "sample_hyperandroneA_CDCl3.xlsx" and its associated database excel file "Database_1.xlsx" provided.
 
