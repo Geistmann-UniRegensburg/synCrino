@@ -1,4 +1,4 @@
-synCrino-validation
+# synCrino-validation
 
 This code was used to compare three different approaches regarding the synCrino python script. The outcome include the resulting ranks, RMSD and executing times.
 This repository contains the validation and benchmarking codebase supporting the methodological evaluation of automated 13C NMR spectrum alignment algorithms.To demonstrate computational efficiency, mathematical robustness, and accuracy, three distinct algorithmic matching strategies are benchmarked against one another across full reference datasets.
@@ -11,15 +11,17 @@ pandas, numpy, matplotlib, scipy, tqdm;
 Input files: One database in the standardized database excel sheet, one experimental 13C NMR data of a sample in the standardized sample excel sheet
 
 
-How to Use:
+# How to Use:
 
-import pandas as pd
 from synCrino_validation import run_and_compare_benchmarks, load_database, load_sample
-# Load database and test sample:
+
+#Load database and test sample:
+
 database = load_database("path/to/standardized_database.xlsx")
 
 sample = load_sample("path/to/standardized_sample.xlsx")
-# Run full comparative benchmark
+#Run full comparative benchmark
+
 df_dp, df_bf, df_3l, top10 = run_and_compare_benchmarks(
     database=database, 
     sample=sample_shifts, 
