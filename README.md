@@ -20,12 +20,20 @@ database = load_database("path/to/standardized_database.xlsx")
 
 sample = load_sample("path/to/standardized_sample.xlsx")
 
-#Run comparison against database (by default with exact carbon count matching):
+#Run comparison against database (by default with only exact carbon count matching):
 
-results_df = comparison_similar_compound(
+results_exact_cc = comparison_similar_compound(
     database=database, 
     sample=sample, 
     exact_carbon_count=True
+)
+
+#Run comparison against all database entries:
+
+results_any_cc = comparison_similar_compound(
+    database=database, 
+    sample=sample, 
+    exact_carbon_count=False
 )
 
 # Example and further Use:
@@ -38,7 +46,7 @@ For further use, there are the standardized excel files for sample ("sample_empt
 
 
 
-Raw NMR Datasets: Raw spectral data files (Bruker FIDs) used for algorithm validation are permanently archived on Zenodo at https://doi.org/10.5281/zenodo.XXXXXXX.
+Raw NMR Datasets: Raw spectral data files (Bruker FIDs) used for algorithm validation are permanently archived on Zenodo at https://doi.org/10.5281/zenodo.23980965
 
 Repository DOI: This repository version is archived on Zenodo under DOI https://doi.org/10.5281/zenodo.YYYYYYY.
 This project is licensed under the MIT License – see the LICENSE file for details.
