@@ -2,7 +2,7 @@
 
 This code was used to compare three different approaches regarding the synCrino python script. The outcome include the resulting ranks, RMSD and executing times.
 This repository contains the validation and benchmarking codebase supporting the methodological evaluation of automated 13C NMR spectrum alignment algorithms.To demonstrate computational efficiency, mathematical robustness, and accuracy, three distinct algorithmic matching strategies are benchmarked against one another across full reference datasets.
-The three matching strategies are: 3-For-Loops (hierarchical 3-step grid search), Brute Force and Monotonic Dynamic Programming
+The three matching strategies are: 3-For-Loops (hierarchical 3-step grid search), Brute Force (BF) and Monotonic Dynamic Programming (DP)
 
 Requirements: 
 
@@ -28,7 +28,7 @@ sample = load_sample("path/to/standardized_sample.xlsx")
 
 df_dp, df_bf, df_3l, top10 = run_and_compare_benchmarks(
     database=database, 
-    sample=sample_shifts, 
+    sample=sample, 
     exact_cc=False, 
     filename="NMR_Validation_Benchmark_Results.xlsx")
 
