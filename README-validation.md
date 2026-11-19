@@ -1,8 +1,8 @@
-# synCrino-validation
+# synCrino-evaluation
 
 This code was used to compare three different approaches regarding the synCrino python script. The outcome include the resulting ranks, RMSD and executing times.
-This repository contains the validation and benchmarking codebase supporting the methodological evaluation of automated 13C NMR spectrum alignment algorithms.To demonstrate computational efficiency, mathematical robustness, and accuracy, three distinct algorithmic matching strategies are benchmarked against one another across full reference datasets.
-The three matching strategies are: 3-For-Loops (hierarchical 3-step grid search), Brute Force (BF) and Monotonic Dynamic Programming (DP)
+This repository contains the evaluation and benchmarking codebase supporting the methodological evaluation of automated 13C NMR spectrum alignment algorithms.To demonstrate computational efficiency, mathematical robustness, and accuracy, three distinct algorithmic matching strategies are benchmarked against one another across full reference datasets. For evaluation of the accuracy a high-resolution Dynamic Programming Monotonic match was used (1001 grid steps), for the performance benchmarking a reduced-resolution variation of the Monotonic Match was used (51 grid steps)
+The three matching strategies are: Adaptive Grid Search (AGS), Brute Force (BF) and Monotonic Dynamic Programming (DP)
 
 Requirements: 
 
@@ -15,7 +15,7 @@ Input files: One database in the standardized database excel sheet, one experime
 
 # How to Use:
 
-from synCrino_validation import run_and_compare_benchmarks, load_database, load_sample
+from synCrino_evaluation import run_and_compare_benchmarks, load_database, load_sample
 
 #Load database and test sample:
 
@@ -26,7 +26,7 @@ sample = load_sample("path/to/standardized_sample.xlsx")
 
 #Run full comparative benchmark
 
-df_dp, df_bf, df_3l, top10 = run_and_compare_benchmarks(
+df_dp, df_bf, df_ags, top10 = run_and_compare_benchmarks(
     database=database, 
     sample=sample, 
     exact_cc=False, 
