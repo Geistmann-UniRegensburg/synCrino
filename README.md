@@ -48,7 +48,4 @@ For further use, there are the standardized excel files for sample ("sample_empt
 
 Raw NMR Datasets: Raw spectral data files (Bruker FIDs) used for algorithm evaluation are permanently archived on Zenodo at https://doi.org/10.5281/zenodo.23980965
 
-Repository DOI: This repository version is archived on Zenodo under DOI https://doi.org/10.5281/zenodo.YYYYYYY.
 This project is licensed under the MIT License – see the LICENSE file for details.
-
-If you use this code or database in your research, please cite our paper:
