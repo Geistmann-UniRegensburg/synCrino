@@ -42,11 +42,11 @@ As an testing example, there is the sample excel file "sample_hyperandroneA_CDCl
 
 As described in the paper, Database 1 contains polycyclic polyprenylated caged bicyclo[3.3.1]nonane Type A acylphloroglucinols, and Database 2 compiles polycyclic polyprenylated uncaged bicyclo[3.3.1]nonane Type A acylphloroglucinols.
 
-For further use, there are the standardized excel files for sample ("sample_empty.xlsx") and database ("database_empty.xlsx") provided. If there are peaks, which are because of equivalent or overlapping carbons, take them as duplicate by copying the chemical shift
+For further use, there are the standardized excel files for sample ("sample_empty.xlsx") and database ("database_empty.xlsx") provided. If there are peaks, which are because of equivalent or overlapping carbons, take them as duplicate by copying the chemical shift.
 
 
 
-Raw NMR Datasets: Raw spectral data files (Bruker FIDs) used for algorithm validation are permanently archived on Zenodo at https://doi.org/10.5281/zenodo.23980965
+Raw NMR Datasets: Raw spectral data files (Bruker FIDs) used for algorithm evaluation are permanently archived on Zenodo at https://doi.org/10.5281/zenodo.23980965
 
 Repository DOI: This repository version is archived on Zenodo under DOI https://doi.org/10.5281/zenodo.YYYYYYY.
 This project is licensed under the MIT License – see the LICENSE file for details.
